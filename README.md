@@ -4,27 +4,27 @@ Comparison of go lang testing libraries
 
 ## Libraries in comparison
 
-    *testing: http://golang.org/pkg/testing/
+*   testing: http://golang.org/pkg/testing/
     License: BSD
 	Last Activity: -
 	
-	*testify: https://github.com/stretchr/testify/
+*   testify: https://github.com/stretchr/testify/
     License: MIT
 	Last Activity: 2
 	
-	*gocheck: http://labix.org/gocheck
+*   gocheck: http://labix.org/gocheck
     License: BSD
 	Last Activity: 16
 	
-	*prettytest: https://github.com/remogatto/prettytest
+*   prettytest: https://github.com/remogatto/prettytest
     License: MIT
 	Last Activity: 60
 	
-	*go-spec: https://github.com/bmatsuo/go-spec
+*   go-spec: https://github.com/bmatsuo/go-spec
     License: BSD
 	Last Activity: 700
 	
-	*gospec: https://github.com/orfjackal/gospec
+*   gospec: https://github.com/orfjackal/gospec
     License: Apache
 	Last Activity: 350
 	

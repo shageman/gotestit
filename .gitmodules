@@ -4,3 +4,12 @@
 [submodule "src/github.com/stretchr/testify"]
 	path = src/github.com/stretchr/testify
         url = https://github.com/stretchr/testify
+[submodule "src/github.com/remogatto/prettytest"]
+	path = src/github.com/remogatto/prettytest
+	url = https://github.com/remogatto/prettytest.git
+[submodule "src/github.com/bmatsuo/go-spec"]
+	path = src/github.com/bmatsuo/go-spec
+	url = https://github.com/bmatsuo/go-spec.git
+[submodule "src/github.com/orfjackal/gospec"]
+	path = src/github.com/orfjackal/gospec
+	url = https://github.com/orfjackal/gospec.git

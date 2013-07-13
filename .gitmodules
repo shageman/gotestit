@@ -13,3 +13,6 @@
 [submodule "src/github.com/orfjackal/gospec"]
 	path = src/github.com/orfjackal/gospec
 	url = https://github.com/orfjackal/gospec.git
+[submodule "github.com/pranavraja/zen"]
+	path = github.com/pranavraja/zen
+	url = https://github.com/pranavraja/zen

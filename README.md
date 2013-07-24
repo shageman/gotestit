@@ -28,12 +28,12 @@ Comparison of go lang testing libraries
     License: Apache  
 	Last Activity: 350 days ago on 7/3/2013
 
-*   mao: https://github.com/azer/mao
-    License: none
+*   mao: https://github.com/azer/mao  
+    License: none  
     Last Activity: 9 days ago on 7/9/2013
 
-*   mao: https://github.com/pranavraja/zen
-    License: none
+*   mao: https://github.com/pranavraja/zen  
+    License: none  
     Last Activity: 2 days ago on 7/13/2013
 
 ## Assertions/Matchers

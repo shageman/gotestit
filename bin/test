@@ -1,0 +1,27 @@
+#!/bin/bash
+
+result=0
+
+packages=(
+    gotestit/loggregatorclient
+    gotestit/lc_gocheck
+    gotestit/lc_testify
+    gotestit/lc_testing
+);
+
+for package in "${packages[@]}"
+do
+    echo -e "\n Testing package $package"
+    $(dirname $0)/go fmt $package
+    $(dirname $0)/go test -i --race $package
+    $(dirname $0)/go test -v --race $package
+    result+=$?
+done
+
+if [ $result -eq 0 ]; then
+	echo -e "\nSUITE SUCCESS"
+else
+	echo -e "\nSUITE FAILURE"
+fi
+
+exit $result

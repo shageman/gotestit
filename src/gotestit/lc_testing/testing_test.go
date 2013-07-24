@@ -1,56 +1,71 @@
-package loggregatorclient_testify
+package lc_testing
 
 import (
-	l "gotestit/loggregatorclient"
 	"github.com/cloudfoundry/gosteno"
-	"github.com/stretchr/testify/assert"
+	l "gotestit/loggregatorclient"
 	"net"
 	"testing"
 )
 
 func TestSend(t *testing.T) {
 	bufferSize := 4096
-	expectedOutput := []byte("Important Testmessage")
 	loggregatorClient := l.NewLoggregatorClient("localhost:9876", gosteno.NewLogger("TestLogger"), bufferSize)
 
 	udpAddr, err := net.ResolveUDPAddr("udp", "localhost:9876")
-	assert.NoError(t, err)
+	if err != nil {
+		t.Errorf("Expected no error, but got %v", err)
+	}
 
 	udpListener, err := net.ListenUDP("udp", udpAddr)
 	defer udpListener.Close()
-	assert.NoError(t, err)
+	if err != nil {
+		t.Errorf("Expected no error, but got %v", err)
+	}
 
+	expectedOutput := []byte("Important Testmessage")
 	loggregatorClient.Send(expectedOutput)
 
 	buffer := make([]byte, bufferSize)
 	readCount, _, err := udpListener.ReadFromUDP(buffer)
-	assert.NoError(t, err)
+	if err != nil {
+		t.Errorf("Expected no error, but got %v", err)
+	}
 
 	received := string(buffer[:readCount])
-	assert.Equal(t, string(expectedOutput), received)
+	if string(expectedOutput) != received {
+		t.Errorf("Expected %s to equal %s", string(expectedOutput), received)
+	}
 }
 
 func TestDontSendEmptyData(t *testing.T) {
 	bufferSize := 4096
-	firstMessage := []byte("")
-	secondMessage := []byte("hi")
 	loggregatorClient := l.NewLoggregatorClient("localhost:9876", gosteno.NewLogger("TestLogger"), bufferSize)
 
 	udpAddr, err := net.ResolveUDPAddr("udp", "localhost:9876")
-	assert.NoError(t, err)
+	if err != nil {
+		t.Errorf("Expected no error, but got %v", err)
+	}
 
 	udpListener, err := net.ListenUDP("udp", udpAddr)
 	defer udpListener.Close()
-	assert.NoError(t, err)
+	if err != nil {
+		t.Errorf("Expected no error, but got %v", err)
+	}
 
+	firstMessage := []byte("")
+	secondMessage := []byte("hi")
 	loggregatorClient.Send(firstMessage)
 	loggregatorClient.Send(secondMessage)
 
 	buffer := make([]byte, bufferSize)
 	readCount, _, err := udpListener.ReadFromUDP(buffer)
 
-	assert.NoError(t, err)
+	if err != nil {
+		t.Errorf("Expected no error, but got %v", err)
+	}
 
 	received := string(buffer[:readCount])
-	assert.Equal(t, string(secondMessage), received)
+	if string(secondMessage) != received {
+		t.Errorf("Expected %s to equal %s", string(secondMessage), received)
+	}
 }

@@ -4,9 +4,10 @@ result=0
 
 packages=(
     gotestit/loggregatorclient
-    gotestit/lc_gocheck
-    gotestit/lc_testify
     gotestit/lc_testing
+    gotestit/lc_testify
+    gotestit/lc_gocheck
+    gotestit/lc_prettytest
 );
 
 for package in "${packages[@]}"

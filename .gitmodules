@@ -16,3 +16,6 @@
 [submodule "github.com/pranavraja/zen"]
 	path = github.com/pranavraja/zen
 	url = https://github.com/pranavraja/zen
+[submodule "src/github.com/pranavraja/zen"]
+	path = src/github.com/pranavraja/zen
+	url = https://github.com/pranavraja/zen.git

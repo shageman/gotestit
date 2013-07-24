@@ -10,6 +10,7 @@ packages=(
     gotestit/lc_prettytest
     gotestit/lc_go_spec
     gotestit/lc_gospec
+    gotestit/lc_zen
 );
 
 for package in "${packages[@]}"

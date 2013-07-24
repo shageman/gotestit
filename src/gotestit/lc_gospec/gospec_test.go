@@ -21,8 +21,6 @@ func LoggregatorClientSpec(c gospec.Context) {
 	c.Expect(err, IsNil)
 
 	c.Specify("That it sends data", func() {
-		defer udpListener.Close()
-
 		expectedOutput := []byte("Important Testmessage")
 		loggregatorClient.Send(expectedOutput)
 
@@ -34,8 +32,6 @@ func LoggregatorClientSpec(c gospec.Context) {
 		c.Expect(string(expectedOutput), Equals, received)
 	})
 	c.Specify("That it does not send empty data", func() {
-		defer udpListener.Close()
-
 		firstMessage := []byte("")
 		secondMessage := []byte("hi")
 		loggregatorClient.Send(firstMessage)

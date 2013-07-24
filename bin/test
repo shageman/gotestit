@@ -8,6 +8,8 @@ packages=(
     gotestit/lc_testify
     gotestit/lc_gocheck
     gotestit/lc_prettytest
+    gotestit/lc_go_spec
+    gotestit/lc_gospec
 );
 
 for package in "${packages[@]}"

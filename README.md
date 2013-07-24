@@ -1,4 +1,4 @@
-# Go Test It
+# Go Test It [![Build Status](https://travis-ci.org/shageman/gotestit.png?branch=master)](https://travis-ci.org/shageman/gotestit)
 
 Comparison of go lang testing libraries
 

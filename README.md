@@ -25,7 +25,7 @@ Comparison of go lang testing libraries
 *   mao: https://github.com/azer/mao  
     Last Activity: 9 days ago on 7/9/2013
 
-*   mao: https://github.com/pranavraja/zen  
+*   zen: https://github.com/pranavraja/zen  
     License: Apache  
     Last Activity: 2 days ago on 7/13/2013
 

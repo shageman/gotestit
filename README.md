@@ -5,29 +5,29 @@ Comparison of go lang testing libraries
 ## Libraries in comparison
 
 *   testing: http://golang.org/pkg/testing/  
-	Last Activity: -  
+    Last Activity: -  
 	
 *   testify: https://github.com/stretchr/testify/  
-	Last Activity: 2 days ago on 7/3/2013
+    Last Activity: 7 days ago on 7/24/2013
 	
 *   gocheck: http://labix.org/gocheck  
-	Last Activity: 16 days ago on 7/3/2013
+    Last Activity: 30 days ago on 7/24/2013
 	
 *   prettytest: https://github.com/remogatto/prettytest  
-	Last Activity: 60 days ago on 7/3/2013
+    Last Activity: 90 days ago on 7/24/2013
 	
 *   go-spec: https://github.com/bmatsuo/go-spec  
-	Last Activity: 700 days ago on 7/3/2013
+    Last Activity: 700 days ago on 7/24/2013
 	
 *   gospec: https://github.com/orfjackal/gospec  
-	Last Activity: 350 days ago on 7/3/2013
+    Last Activity: 350 days ago on 7/24/2013
 
 *   mao: https://github.com/azer/mao  
-    Last Activity: 9 days ago on 7/9/2013
+    Last Activity: 17 days ago on 7/9/2013
 
 *   zen: https://github.com/pranavraja/zen  
     License: Apache  
-    Last Activity: 2 days ago on 7/13/2013
+    Last Activity: 14 days ago on 7/13/2013
 
 ## Assertions/Matchers
 

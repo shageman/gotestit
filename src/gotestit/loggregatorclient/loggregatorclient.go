@@ -14,15 +14,13 @@ type udpLoggregatorClient struct {
 }
 
 func NewLoggregatorClient(loggregatorAddress string, logger *gosteno.Logger, bufferSize int) *udpLoggregatorClient {
-	loggregatorClient := &udpLoggregatorClient{}
+	loggregatorClient := &udpLoggregatorClient{make(chan []byte, bufferSize)}
 
 	connection, err := net.Dial("udp", loggregatorAddress)
 	if err != nil {
 		logger.Fatalf("Error resolving loggregator address %s, %s", loggregatorAddress, err)
 		panic(err)
 	}
-
-	loggregatorClient.sendChannel = make(chan []byte, bufferSize)
 
 	go func() {
 		for {

@@ -1,5 +1,7 @@
 # Go Test It [![Build Status](https://travis-ci.org/shageman/gotestit.png?branch=master)](https://travis-ci.org/shageman/gotestit)
 
+[Slides from my presentation at Denver Gopher's 7/25/2013](https://github.com/shageman/gotestit/blob/master/20130725denverGophersPresentation.pdf)
+
 Comparison of go lang testing libraries
 
 ## Libraries in comparison

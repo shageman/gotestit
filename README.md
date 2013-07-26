@@ -1,5 +1,12 @@
 # Go Test It [![Build Status](https://travis-ci.org/shageman/gotestit.png?branch=master)](https://travis-ci.org/shageman/gotestit)
 
+Summary from the July presentation: There are a couple of interesting testing libraries in go. "testing" comes with the standard library, and gives only very basic support for asserting facts. 
+
+Of the other libraries, I recommend looking at "testify/assert", "zen", and "gocheck". testify/assert is used in conjunction with testing to which it adds a lot of useful assertions, but doesn't change the basics of how a test is written. Zen implements the best version of BDD style testing I have seen in go. Essentially, you write one test into which you embed describes, its, and expects. Like testify/assert "gocheck" comes with many matchers out of the box. Gocheck requires creating a suite struct and uses a non-standard way of running the test methods. Its most useful feature to me are setup and teardown methods to allow tests in a suite to share common code. The shared state can lead to problems with concurrent code.
+
+So, summary of the summary: if you are just trying to test stuff and need assertions, go with testify/assert. If you want to see and play with BDD for go, use zen.
+
+
 [Slides from my presentation at Denver Gopher's 7/25/2013](https://github.com/shageman/gotestit/blob/master/20130725denverGophersPresentation.pdf)
 
 Comparison of go lang testing libraries

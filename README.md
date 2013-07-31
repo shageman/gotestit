@@ -4,6 +4,8 @@ Summary from the July presentation: There are a couple of interesting testing li
 
 Of the other libraries, I recommend looking at "testify/assert", "zen", and "gocheck". testify/assert is used in conjunction with testing to which it adds a lot of useful assertions, but doesn't change the basics of how a test is written. Zen implements the best version of BDD style testing I have seen in go. Essentially, you write one test into which you embed describes, its, and expects. Like testify/assert "gocheck" comes with many matchers out of the box. Gocheck requires creating a suite struct and uses a non-standard way of running the test methods. Its most useful feature to me are setup and teardown methods to allow tests in a suite to share common code. The shared state can lead to problems with concurrent code.
 
+As far as the other libraries go, check them out to see the different styles. Beware of go-spec: The version tested here, never fails assertions!
+
 So, summary of the summary: if you are just trying to test stuff and need assertions, go with testify/assert. If you want to see and play with BDD for go, use zen.
 
 
@@ -35,7 +37,6 @@ Comparison of go lang testing libraries
     Last Activity: 17 days ago on 7/9/2013
 
 *   zen: https://github.com/pranavraja/zen  
-    License: Apache  
     Last Activity: 14 days ago on 7/13/2013
 
 ## Assertions/Matchers
@@ -266,6 +267,12 @@ Comparison of go lang testing libraries
 </table>
 
 *CollectionContains allows checks for All, Any, Exactly, InOrder, and InPartialOrder
+
+## Sample tests
+
+The code to be tested is taken from the [cloudfoundry loggregator project](https://github.com/cloudfoundry/loggregator). Specifically, we are testing a piece that receives data on a channel and sends it off via UPD. We will be testing that [the code](https://github.com/shageman/gotestit/blob/master/src/gotestit/loggregatorclient/loggregatorclient.go) sends data, but that it does not send any empty data it might receive.
+
+All the tests are in packages relating to their name within the [gotestit package](https://github.com/shageman/gotestit/tree/master/src/gotestit).
 
 ## Sources
 

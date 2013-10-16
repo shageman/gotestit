@@ -39,6 +39,11 @@ Comparison of go lang testing libraries
 *   zen: https://github.com/pranavraja/zen  
     Last Activity: 14 days ago on 7/13/2013
 
+## Libraries in need of addition
+*   ginkgo/gomega
+*   GoConvey
+*   _submit a pull request!_
+
 ## Assertions/Matchers
 
 <table>

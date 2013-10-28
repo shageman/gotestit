@@ -81,8 +81,8 @@ Comparison of go lang testing libraries
     <tr>
         <td>Style</td>
         <td>make your own</td>
-        <td>assert</td>
         <td>spec</td>
+        <td>assert</td>
         <td>spec</td>
         <td>spec</td>
         <td>spec</td>
@@ -214,7 +214,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>StringMatches</td>
         <td></td>
-        <td>✓</td>
+        <td></td>
         <td></td>
         <td>✓</td>
         <td>✓</td>
@@ -247,7 +247,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>HasLen</td>
         <td></td>
-        <td>✓</td>
+        <td></td>
         <td></td>
         <td>✓</td>
         <td>✓</td>
@@ -258,7 +258,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Matches</td>
         <td></td>
-        <td>✓</td>
+        <td></td>
         <td></td>
         <td>✓</td>
         <td>✓</td>
@@ -280,7 +280,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Within</td>
         <td></td>
-        <td>✓</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>

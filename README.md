@@ -73,6 +73,7 @@ Comparison of go lang testing libraries
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         <td>uses gocheck</td>
         <td></td>
         <td></td>
@@ -175,7 +176,6 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
-        <td></td>
         <td></td>
     </tr>
     <tr>

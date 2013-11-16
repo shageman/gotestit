@@ -19,7 +19,7 @@ Comparison of go lang testing libraries
     Last Activity: -  
 
 *   GoConvey: https://github.com/smartystreets/goconvey/  
-    Last Activity: 2 days ago 10/25/2013
+    Last Activity: 3 hours ago 11/16/2013
 
 *   testify: https://github.com/stretchr/testify/  
     Last Activity: 7 days ago on 7/24/2013
@@ -48,7 +48,7 @@ Comparison of go lang testing libraries
     <tbody>
     <tr>
         <th>Name</th>
-        <th>Testing</th>
+        <th>testing</th>
         <th>GoConvey</th>
         <th>testify</th>
         <th>gocheck</th>
@@ -159,7 +159,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Empty</td>
         <td></td>
-        <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td></td>
         <td></td>

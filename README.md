@@ -17,7 +17,10 @@ Comparison of go lang testing libraries
 
 *   testing: http://golang.org/pkg/testing/  
     Last Activity: -  
-	
+
+*   GoConvey: https://github.com/smartystreets/goconvey/  
+    Last Activity: 3 hours ago 11/16/2013
+
 *   testify: https://github.com/stretchr/testify/  
     Last Activity: 7 days ago on 7/24/2013
 	
@@ -50,7 +53,8 @@ Comparison of go lang testing libraries
     <tbody>
     <tr>
         <th>Name</th>
-        <th>Testing</th>
+        <th>testing</th>
+        <th>GoConvey</th>
         <th>testify</th>
         <th>gocheck</th>
         <th>prettytest</th>
@@ -61,6 +65,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>License</td>
         <td>BSD</td>
+        <td>MIT</td>
         <td>MIT</td>
         <td>BSD</td>
         <td>MIT</td>
@@ -73,6 +78,7 @@ Comparison of go lang testing libraries
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         <td>uses gocheck</td>
         <td></td>
         <td></td>
@@ -81,6 +87,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Style</td>
         <td>make your own</td>
+        <td>spec</td>
         <td>assert</td>
         <td>spec</td>
         <td>spec</td>
@@ -97,10 +104,12 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
     </tr>
     <tr>
         <td>IsSame</td>
         <td></td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td></td>
@@ -111,6 +120,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>DeepEqual</td>
         <td></td>
+        <td>✓</td>
         <td></td>
         <td>✓</td>
         <td>✓</td>
@@ -122,6 +132,7 @@ Comparison of go lang testing libraries
         <td>True</td>
         <td></td>
         <td>✓</td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td></td>
@@ -131,6 +142,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>False</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td></td>
         <td></td>
@@ -144,6 +156,7 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
         <td></td>
         <td>✓</td>
         <td>✓</td>
@@ -151,6 +164,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Empty</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td></td>
         <td></td>
@@ -161,15 +175,17 @@ Comparison of go lang testing libraries
     <tr>
         <td>Error</td>
         <td></td>
-        <td>✓</td>
-        <td>✓</td>
-        <td>✓</td>
-        <td>✓</td>
         <td></td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✓</td>
         <td></td>
     </tr>
     <tr>
         <td>Implements</td>
+        <td></td>
         <td></td>
         <td>✓</td>
         <td>✓</td>
@@ -184,6 +200,7 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td></td>
@@ -191,6 +208,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>StringContains</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td></td>
         <td></td>
@@ -202,6 +220,7 @@ Comparison of go lang testing libraries
         <td>StringMatches</td>
         <td></td>
         <td></td>
+        <td></td>
         <td>✓</td>
         <td>✓</td>
         <td></td>
@@ -211,6 +230,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Collection</td>
         <td></td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td></td>
@@ -225,11 +245,13 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
         <td>HasLen</td>
+        <td></td>
         <td></td>
         <td></td>
         <td>✓</td>
@@ -240,6 +262,7 @@ Comparison of go lang testing libraries
     </tr>
     <tr>
         <td>Matches</td>
+        <td></td>
         <td></td>
         <td></td>
         <td>✓</td>
@@ -254,12 +277,14 @@ Comparison of go lang testing libraries
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         <td>✓</td>
         <td>✓</td>
         <td></td>
     </tr>
     <tr>
         <td>Within</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>

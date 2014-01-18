@@ -19,3 +19,9 @@
 [submodule "src/github.com/pranavraja/zen"]
 	path = src/github.com/pranavraja/zen
 	url = https://github.com/pranavraja/zen.git
+[submodule "src/github.com/onsi/ginkgo"]
+	path = src/github.com/onsi/ginkgo
+	url = https://github.com/onsi/ginkgo
+[submodule "src/github.com/onsi/gomega"]
+	path = src/github.com/onsi/gomega
+	url = https://github.com/onsi/gomega

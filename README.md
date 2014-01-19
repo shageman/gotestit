@@ -42,8 +42,11 @@ Comparison of go lang testing libraries
 *   zen: https://github.com/pranavraja/zen  
     Last Activity: 14 days ago on 7/13/2013
 
+*   Ginkgo: https://github.com/onsi/ginkgo
+    Gomega: https://github.com/onsi/gomega
+    Last Activity: an hour ago on 1/18/2014
+
 ## Libraries in need of addition
-*   ginkgo/gomega
 *   GoConvey
 *   _submit a pull request!_
 
@@ -54,6 +57,7 @@ Comparison of go lang testing libraries
     <tr>
         <th>Name</th>
         <th>testing</th>
+        <th>Ginkgo</th>
         <th>GoConvey</th>
         <th>testify</th>
         <th>gocheck</th>
@@ -67,6 +71,7 @@ Comparison of go lang testing libraries
         <td>BSD</td>
         <td>MIT</td>
         <td>MIT</td>
+        <td>MIT</td>
         <td>BSD</td>
         <td>MIT</td>
         <td>BSD</td>
@@ -76,6 +81,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Assertions</td>
         <td></td>
+        <td><a href="http://onsi.github.io/gomega/#provided_matchers">Gomega</a></td>
         <td></td>
         <td></td>
         <td></td>
@@ -87,6 +93,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Style</td>
         <td>make your own</td>
+        <td>spec</td>
         <td>spec</td>
         <td>assert</td>
         <td>spec</td>
@@ -105,10 +112,12 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
     </tr>
     <tr>
         <td>IsSame</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td></td>
         <td></td>
@@ -120,6 +129,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>DeepEqual</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td></td>
         <td>✓</td>
@@ -133,6 +143,7 @@ Comparison of go lang testing libraries
         <td></td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td></td>
@@ -142,6 +153,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>False</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td>✓</td>
         <td></td>
@@ -157,6 +169,7 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
         <td></td>
         <td>✓</td>
         <td>✓</td>
@@ -164,6 +177,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Empty</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td>✓</td>
         <td></td>
@@ -175,6 +189,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Error</td>
         <td></td>
+        <td>✓</td>
         <td></td>
         <td>✓</td>
         <td>✓</td>
@@ -185,6 +200,7 @@ Comparison of go lang testing libraries
     </tr>
     <tr>
         <td>Implements</td>
+        <td></td>
         <td></td>
         <td></td>
         <td>✓</td>
@@ -201,6 +217,7 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td></td>
@@ -208,6 +225,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>StringContains</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td>✓</td>
         <td></td>
@@ -219,6 +237,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>StringMatches</td>
         <td></td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td>✓</td>
@@ -230,6 +249,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Collection</td>
         <td></td>
+        <td>✓</td>
         <td>✓</td>
         <td></td>
         <td></td>
@@ -246,12 +266,14 @@ Comparison of go lang testing libraries
         <td>✓</td>
         <td>✓</td>
         <td>✓</td>
+        <td>✓</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
         <td>HasLen</td>
         <td></td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td>✓</td>
@@ -263,6 +285,7 @@ Comparison of go lang testing libraries
     <tr>
         <td>Matches</td>
         <td></td>
+        <td>✓</td>
         <td></td>
         <td></td>
         <td>✓</td>
